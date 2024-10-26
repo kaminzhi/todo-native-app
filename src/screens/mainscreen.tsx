@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Text, Box, Center, VStack, useColorModeValue } from "native-base";
 import ThemeSwitch from "../components/theme-switch";
-import AnCheckbox from "../components/checkbox";
+import NvBar from "../components/navigation";
 
 export default function MainScreen() {
   return (
@@ -11,10 +11,8 @@ export default function MainScreen() {
       px={4}
       flex={1}
     >
+      <NvBar />
       <VStack space={5} alignItems="center">
-        <Box w="100px" h="100px">
-          <AnCheckbox />
-        </Box>
         <Box bg={useColorModeValue("red.500", "yellow.500")}>
           <Text fontSize="xl">Hello</Text>
         </Box>
